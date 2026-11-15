@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="mast">
+  <div class="mast-in">
+    <div class="brand">
+      <div class="glyph" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div>
+        <h1>Token Radar</h1>
+        <p class="tag">Pre-token protocols, ranked by what a launch could be worth — and how to farm each one before it happens.</p>
+      </div>
+    </div>
+    <div class="stats" id="stats" aria-label="Snapshot summary"></div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <a href="#/" data-tab="board">The board</a>
+    <a href="#/live" data-tab="live">Live tokens</a>
+    <a href="#/model" data-tab="model">The model</a>
+  </nav>
+</header>
+<main id="app" tabindex="-1" aria-busy="true"></main>
+<footer class="foot">
+  <p id="source-line"></p>
+  <p>Implied value is this dashboard's own model claim, computed only from the snapshot's figures. A protocol here records no token on DefiLlama; that is a record, not a proof, and no launch is promised. Farm plans are starting points, not financial advice.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
